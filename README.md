@@ -1,5 +1,5 @@
 # FastFoodAPI
-=============
+
 __FastFoodAPI__: es una API que simula la generación de tickets en un restaurante. El modelo de negocio actualmente consiste en que el restaurante tiene una capacidad máxima de 6 mesas, llegado este tope no se permitirá ingresar al usuario. 
 
 ## How to run?

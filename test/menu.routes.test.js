@@ -45,7 +45,7 @@ describe("API — fastFood", () => {
   
   describe("POST /dev/api/fastfood/ticket/test", () => {
     const invalidInput = { body: { userName: 'NAME', userId: 'USERID' } };
-    const undefinedTest = { body: { testName: 'hello worlsd!' }};
+    const undefinedTest = { body: { testName: 'hello world!' }};
 
     it('should return 403 because userName and userId are not called NAME and USERid', async () => {
       const res = await request("http://localhost:3000")
