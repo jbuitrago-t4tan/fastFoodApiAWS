@@ -189,7 +189,22 @@ module.exports.remove_table = (req,res) => {
 
 // RM-5: Test implementation 
 module.exports.test_implementation = (req, res) => {
-  const {userName, userId} = req.body;
+  const {userName, userId, testName} = req.body;
+
+  if(testName === 'hello world!'){
+    return res.status(400).json({
+      ok:false,
+      statusCode: 400,
+      message: 'error'
+    });
+  } 
+  if(userName === 'NAME' && userId === 'USERID'){
+    return res.status(403).json({
+      ok:false,
+      statusCode: 403,
+      message: 'error here!'
+    });
+  }
   return res.json({
     ok: true,
     statusCode: 200,
@@ -198,5 +213,6 @@ module.exports.test_implementation = (req, res) => {
       userId
     }
   });
+
 };
 
