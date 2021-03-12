@@ -1,0 +1,11 @@
+# package directories
+node_modules
+jspm_packages
+
+# Serverless directories
+.serverless
+
+# Dynamodb local
+.dynamodb 
+
+# QibSB8NQTC9W8nzo - globalUser
